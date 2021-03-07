@@ -226,9 +226,11 @@ class Robo_SefaPR():
         navegador.get(self.__site_receita_pr_login)
 
         campo_cpf = self.localizar_elemento('//*[@id="cpfusuario"]')
+        campo_cpf.clear()
         campo_cpf.send_keys(self.login)
 
         campo_senha = self.localizar_elemento('/html/body/div[2]/form[1]/div[3]/div/input')
+        campo_senha.clear()
         campo_senha.send_keys(self.senha)
 
         botao_login = self.localizar_elemento('/html/body/div[2]/form[1]/div[4]/button')
