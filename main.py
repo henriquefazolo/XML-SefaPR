@@ -1,5 +1,5 @@
 # coding: utf-8
-# version : 0.2
+# version : 0.3
 # author : Henrique UM Fazolo
 # e-mail : henriquefazolo@gmail.com
 
