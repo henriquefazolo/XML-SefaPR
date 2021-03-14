@@ -17,6 +17,7 @@
 # 22/02/2021    O sistema trata espaços e linhas em branco do arquivo txt
 # 23/02/2021    Criado listbox das empresas do txt
 #               Função para selecionar empresa para iniciar o trabalho do robô: concluido
+#14/03/2021     Analisar ultimas linhas - expected_condition
 
 # imports
 
@@ -350,3 +351,20 @@ class Robo_SefaPR():
 logica = ''
 interface = Interface_Grafica()
 interface.executar()
+
+"""
+from selenium import webdriver
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By
+
+
+navegador = webdriver.Firefox()
+
+navegador.get('https://www.google.com.br')
+
+espera = WebDriverWait(navegador, 10)
+
+elemento = espera.until(EC.element_to_be_clickable((By.XPATH, '/html/body/div/div[2]/form/div[2]/div[1]/div[1]/div/div[2]/input')))
+elemento.send_keys('teste')
+"""
